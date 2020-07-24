@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="custom-container">
+         <nav>
+            <input type="checkbox" name="nav-toggle" id="nav-toggle">
+            <div class="logo">
+                <img src="images/DAVE PICTURES.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#featured">Featured work</a></li>
+                <li><a class="btn btn-ctct-me" href="#contact">Contact Me</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div class="text-over">
+            <div class="title">
+                <h1>David Stinson</h1>
+            </div>
+            <div class="subtag">
+                <h3>Landscape Photographer</h3>
+            </div>
+            <a class="btn btn-ctn" href="#contact">Contact Me</a>
+        </div>
+    </header>
+
+    <section class="about-me container" id="about">
+        <div class="row">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <img src="images/prince.png" alt="" class="img-fluid">
+            </div>
+            <div class=" col-12 col-md-6 order-1 order-md-2 ">
+                <h2>About Me</h2>
+                <p>David Stinson is a creative Landscape photographer producing premium-quality photos in studio settings. 
+                    He is dedicated to creating memories that last a lifetime while driving sales and studio profits.
+                    He manages all facets of photo shoots including scheduling, designing sets, shooting, photo editing, collaborating with clients and closing add-on sales.
+                     He maintains strong digital/technical skills and uses Adobe Photoshop Lightroom CC daily.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-porfolio container" id="portfolio">
+        <h2 class="tag">My Portfolio</h2>
+        <ul class="nav justify-content-center fadeshow">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fashion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nature</a>
+              </li>
+          </ul>
+          
+          <div class="row">
+              <div class="col-md-4 mt-1">
+                <img src="images/cameraman.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4 mt-1">
+                <img src="images/michael-dam.png" alt="" class="img-fluid">
+            </div>
+            
+            <div class="col-md-4 mt-1">
+                <img src="images/nature.png " alt="" class="img-fluid imag">
+                <div class="overlay">
+                    <div class="text">View More</div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mt-4 fadeshow">
+              <div class="col-md-7 mt-1">
+                <img src="images/island.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-1">
+                <img src="images/forest.png" alt="" class="img-fluid">
+              </div>
+          </div>
+    </section>
+
+    <section class="featured container pt-5" id="featured">
+        <h2 class="tag">Featured Works</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/featured 1.png" alt="" class="img-fluid">
+                </div>
+    
+                <div class="col-md-6 align-self-center feat">
+                    <h3>Lifelong Experience</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-md-6 align-self-center feat order-2 order-md-1 text-right">
+                    <h3>Lifelong Experience</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec neque</p>
+                </div>
+    
+                <div class="col-md-6 order-1 order-md-2">
+                    <img src="images/featured 2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me" id="contact">
+        <div class="container">
+            <h2 class="tag-contact">Get in touch</h2>
+            <p>Intrigued by my Collection? Ready to have a session with me? 
+                Do you have some questions you want to ask? Do well to contact us or leave a message</p>
+            <div>
+                <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control inp-txt" placeholder="John Doe">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control inp-txt" placeholder="JohnDoe@yahoo.com">
+                      </div>
+                    <div class="form-group">
+                      <label for="message">Compose Message</label>
+                      <textarea class="form-control inp-txtarea" id="message" rows="3"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-lg btn-block btns">Contact Me</button>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer">
+            <div class="d-flex bd-highlight flex-wrap">
+                <div class="p-2 bd-highlight alo flex-grow-1">&copy 2020 David Stinson</div>
+                <div class="p-2 bd-highlight alo">hello@dp.com</div>
+                <div class="p-2 bd-highlight alo">+31 555 55555 </div>
+                <div class="p-2 bd-highlight alo">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter pl-3" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin pl-3" aria-hidden="true"></i>
+                    <i class="fa fa-instagram pl-3" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstap-js/jquery.js"></script>
+    <script src="js/bootstap-js/popper.min.js"></script>
+    <script src="js/bootstap-js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
