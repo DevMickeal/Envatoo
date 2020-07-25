@@ -81,7 +81,7 @@ nav .icon-burger .line {
   width: 120px;
 }
 
-.active {
+.current {
  border-bottom: 3px solid #F69225;
 }
 .text-over {
@@ -160,6 +160,7 @@ nav .icon-burger .line {
 /****Modal Overlay***/
 .img-container {
   position: relative;
+  width: 300px;
 }
 .overlay {
   position: absolute;
@@ -168,11 +169,13 @@ nav .icon-burger .line {
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 350px;
   opacity: 0;
   transition: .5s ease;
   border-radius: 10px;
   background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .img-container:hover .overlay {
@@ -182,29 +185,33 @@ nav .icon-burger .line {
 
 }
 
-.profilex{
-  margin-top: 300px;
-  float: right;
-  margin-right: 30px;
-  width: 300px!important;
-  display: none;
- }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
+/* MODAL styles */
+.modal-content{
+  width: 650px;
+  height: 650px;
+  background: #121212;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  }
+  .modal-content .close-modal{
+    outline: none;
+    text-align: right;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffff;
+    cursor: pointer;
+  }
+  .modal-content .modal-body {
+    color: #fff;
+  }
+  
+  .carousel-item {
+    padding : 7% 15%;
   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
-
-.imag {
-    width: 100%;
-    height: auto;
-}
 
 .text {
   color: #fff;
@@ -289,7 +296,41 @@ nav .icon-burger .line {
   color: #FFFFFF;
 }
 
+.tab {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #F69225;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
 
 @media (max-width: 768px) {
   nav .links {
@@ -421,5 +462,37 @@ nav .icon-burger .line {
 .footer .alo {
   margin: 0 auto;
   text-align: center;
+}
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+.img-container {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 394px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
 }
 }
