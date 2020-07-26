@@ -162,6 +162,16 @@ nav .icon-burger .line {
   position: relative;
   width: 300px;
 }
+
+.img-containers {
+  position: relative;
+  width: 640px;
+}
+
+.img-contain {
+  position: relative;
+  width: 450px;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -178,11 +188,51 @@ nav .icon-burger .line {
   color: #fff;
 }
 
+.overlays {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 640px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
+}
+.over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 450px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
+}
+
 .img-container:hover .overlay {
   cursor: pointer;
   opacity: 0.9;
   background-color: #F69225;
-
+}
+.img-containers:hover .overlays {
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #F69225;
+}
+.img-contain:hover .over {
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #F69225;
 }
 
 /* MODAL styles */
@@ -347,7 +397,7 @@ nav .icon-burger .line {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #000000;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }
@@ -481,6 +531,47 @@ nav .icon-burger .line {
   margin: 0 auto;
 }
 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
+}
+.img-containers {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+
+.img-contain {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+.overlays {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
+}
+.over {
   position: absolute;
   top: 0;
   bottom: 0;
